@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Soal No 1 -->
+    <script>
+        var batas = prompt("Masukkan batas angka : ");
+
+        for (let i = 1; i <= batas; i+=2) {
+            document.write(i + "<p>");
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.2 -->
+    <script>
+        var batas = prompt("Masukkan batas angka : ");
+
+        for (let i = 0; i <= batas; i+=2) {
+            document.write(i + "<p>");
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.3 -->
+    <script>
+                var batas = prompt("Masukkan batas angka : ");
+        var bilangan;
+
+        for (let i = 1; i <= batas; i++) {
+            bilangan = 0;
+            for (let j = 0; j <= i; j++) {
+                if(i % j == 0){
+                    bilangan = bilangan + 1;
+                }
+            }
+            if (bilangan == 2){
+                document.write(i + "<p>");
+            }
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.4 -->
+    <script>
+        var nilai = prompt("Masukkan Nilai")
+        if (nilai>=90){
+            document.write('Selamat! Anda mendapatkan nilai A.')
+        }
+        else if (nilai>=80<=89){
+            document.write('Anda mendapatkan nilai B.')
+        }
+        else if (nilai>=70<=79){
+            document.write('Anda mendapatkan nilai C.')
+        }
+        else if (nilai>=60<=69){
+            document.write('Anda mendapatkan nilai D.')
+        }
+        else{
+            document.write('Anda mendapatkan nilai E.')
+        }
+        
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.5 -->
+    <script>
+        var uang = prompt("Masukkan Jumlah Uang Anda")
+        if(uang )
+        var nilai = prompt("Masukkan Nama Makanan")
+        if (nilai==('bakso')){
+            document.write('Harga Makanan   = 10.000')
+        }
+        else if (nilai==('mie ayam')){
+            document.write('Harga Makanan   = 8.000')
+        }
+        else if (nilai==('rawon')){
+            document.write('Harga Makanan   = 12.000')
+        }
+        else if (nilai==('nasi pecel')){
+            document.write('Harga Makanan   = 7.000')
+        }
+        else if (nilai==('kupang')){
+            document.write('Harga Makanan   = 13.000')
+        }
+        else{
+            document.write('maaf, menu tidak terdaftar')
+        }
+        
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.8 -->
+    <script>
+        document.write("Soal No.8 a </p>")
+        for(a = 1; a <=5; a+=1){
+            document.write("*</p>");
+        }
+    </script>
+
+    <script>
+        document.write("Soal No.8 b </p>")
+        for(b = 1; b <=25; b+=5){
+            document.write("*****</p>");
+        }
+    </script>
+
+    <script>
+        document.write("Soal No.8 c </p>")
+        for (var i = 0; i < 5; i++) {
+            for (var j = 0; j <=i; j++) {
+                document.write("*");
+            }
+            document.write("</p>");
+        }
+    </script>
+    
+    <script>
+        document.write("Soal No.8 d </p>")
+        for (var i = 0; i <=5; i+=1) {
+            for (var j = i; j < 4; j++) {
+                document.write("*");
+            }
+            document.write("</p>");
+        }
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No.9 -->
+    <script>
+        var a 
+        var b
+        a = prompt('Masukkan Nilai A')
+        if (a){
+            b = prompt('Masukkan NIlai B')
+                if(a=="true" && b=="true"){
+                    document.write("a&&b    = True </p>")
+                    document.write("a||b    = True")
+                }
+                else if(a=="false" && b=="true"){
+                    document.write("a&&b    = False </p>")
+                    document.write("a||b    = True")
+                }
+                else if(a=="true" && b=="false"){
+                    document.write("a&&b    = False </p>")
+                    document.write("a||b    = True")
+                }
+                else if(a=="false" && b=="false"){
+                    document.write("a&&b    = False </p>")
+                    document.write("a||b    = False")
+                }
+            }
+        
+    </script>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <!-- Soal No10 -->
+    <script>
+        var hasil_a = a + b;
+        var hasil_b = a - b;
+        var hasil_c = a * b;
+        var hasil_d = a / b;
+        var hasil_e = a % b;
+
+        var a =(5)
+        var b =(6)
+
+        document.write("Hasil penjumlahan adalah           : " + hasil_a+"</p>");
+        document.write("Hasil pengurangan adalah           : " + hasil_b+"</p>");
+        document.write("Hasil perkalian adalah             : " + hasil_c+"</p>");
+        document.write("Hasil pembagian adalah             : " + hasil_d+"</p>");
+        document.write("Hasil pembagian adalah             : " + hasil_e+"</p>");
+    </script>
+</body>
+</html>
